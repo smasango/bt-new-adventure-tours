@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BT New Adventure Tours | South African Tourism Photos</title>
+    <meta name="description" content="Explore beautiful photos of South Africa's destinations, wildlife, culture and travel experiences.">
+    <link rel="canonical" href="https://www.btnatours.co.za/gallery">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo/bt-logo.png" alt="BT New Adventure Tours Logo">
+                <span class="logo-text">
+                    <span class="logo-text-main">BT New Adventure Tours</span>
+                    <span class="logo-text-tagline">We Tailor Your Tours</span>
+                </span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="request-quote.html" class="nav-cta">Plan Your Tour</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero" style="background: linear-gradient(135deg, #1B3A5E 0%, #2D7D3F 100%); min-height: 300px;">
+            <div class="hero-content">
+                <h1>Gallery</h1>
+                <p class="hero-subtitle">South Africa Through Our Lens</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>South African Destinations</h2>
+                    <p class="section-subtitle">Explore the beauty of South Africa through our photo gallery</p>
+                </div>
+                
+                <div class="gallery">
+                    <div class="gallery-item" onclick="openLightbox(0)">
+                        <img src="images/gallery/landscape-1.jpg" alt="South African Landscape">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(1)">
+                        <img src="images/gallery/wildlife-1.jpg" alt="African Wildlife">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(2)">
+                        <img src="images/gallery/capetown-1.jpg" alt="Cape Town">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(3)">
+                        <img src="images/gallery/safari-1.jpg" alt="Safari Experience">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(4)">
+                        <img src="images/gallery/culture-1.jpg" alt="South African Culture">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(5)">
+                        <img src="images/gallery/beach-1.jpg" alt="South African Beach">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(6)">
+                        <img src="images/gallery/sunset-1.jpg" alt="Sunset in South Africa">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(7)">
+                        <img src="images/gallery/mountain-1.jpg" alt="South African Mountains">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(8)">
+                        <img src="images/gallery/heritage-1.jpg" alt="Heritage Site">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-icon">🔍</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section" style="margin-top: 60px;">
+                    <h2>Ready to Visit These Destinations?</h2>
+                    <p style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-lg); color: var(--white);">
+                        Let us help you plan a tour that brings these destinations to life.
+                    </p>
+                    <a href="request-quote.html" class="btn btn-primary btn-lg">Plan Your Tour</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>BT NEW ADVENTURE TOURS</h3>
+                <p>Discover What South Africa Has To Offer As A Tourist Destination...</p>
+                <p><strong>We Tailor Your Tours...</strong></p>
+                <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.2); margin: 15px 0;">
+                <p><strong>Telephone:</strong> <a href="tel:+27604842816" style="color: var(--primary-gold);">060 484 2816</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Brenda@btnatours.co.za" style="color: var(--primary-gold);">Brenda@btnatours.co.za</a></p>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="services.html#safaris">Safaris</a></li>
+                        <li><a href="services.html#tours">Tours</a></li>
+                        <li><a href="services.html#accommodation">Accommodation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; <span id="year"></span> BT New Adventure Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img src="" alt="Gallery image">
+            <div class="lightbox-nav">
+                <button class="lightbox-btn" onclick="prevLightboxImage()" title="Previous image">❮</button>
+                <button class="lightbox-btn" onclick="nextLightboxImage()" title="Next image">❯</button>
+            </div>
+        </div>
+    </div>
+    
+    <a href="https://wa.me/27604842816?text=Hi%20BT%20New%20Adventure%20Tours%2C%20I%20loved%20your%20gallery%20photos%20and%20would%20like%20to%20visit%20these%20destinations." 
+       class="whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+    
+    <script src="config/business-config.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - BT New Adventure Tours | Get Your Custom Tour</title>
+    <meta name="description" content="Request a custom tour quote from BT New Adventure Tours. Tell us your preferences and we'll create your perfect South African itinerary.">
+    <link rel="canonical" href="https://www.btnatours.co.za/request-quote">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo/bt-logo.png" alt="BT New Adventure Tours Logo">
+                <span class="logo-text">
+                    <span class="logo-text-main">BT New Adventure Tours</span>
+                    <span class="logo-text-tagline">We Tailor Your Tours</span>
+                </span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="request-quote.html" class="nav-cta">Plan Your Tour</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero" style="background: linear-gradient(135deg, #1B3A5E 0%, #2D7D3F 100%); min-height: 300px;">
+            <div class="hero-content">
+                <h1>Request a Tailored Tour</h1>
+                <p class="hero-subtitle">Tell Us Your Plans, We'll Create Your Perfect Journey</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container" style="max-width: 900px;">
+                <div class="section-title">
+                    <h2>Customised Tour Enquiry Form</h2>
+                    <p class="section-subtitle">Help us understand what you're looking for, and we'll create the perfect South African experience for you.</p>
+                </div>
+                
+                <form style="background-color: var(--light-gray); padding: 40px; border-radius: 8px;">
+                    <!-- Personal Information -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 0;">Your Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telephone / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Travel Dates -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 40px;">Travel Dates</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="arrival">Arrival Date *</label>
+                            <input type="date" id="arrival" name="arrival" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Departure Date *</label>
+                            <input type="date" id="departure" name="departure" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Travellers -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 40px;">Travellers</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Number of Adults *</label>
+                            <input type="number" id="adults" name="adults" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Number of Children (if any)</label>
+                            <input type="number" id="children" name="children" min="0">
+                        </div>
+                    </div>
+                    
+                    <!-- Preferences -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 40px;">Tour Preferences</h3>
+                    
+                    <div class="form-group">
+                        <label for="destination">Preferred Destination / Region *</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">-- Select a Destination --</option>
+                            <option value="johannesburg">Johannesburg & Soweto</option>
+                            <option value="capetown">Cape Town</option>
+                            <option value="kruger">Kruger National Park</option>
+                            <option value="pretoria">Pretoria</option>
+                            <option value="cradle">Cradle of Humankind</option>
+                            <option value="mpumalanga">Mpumalanga & Panorama Route</option>
+                            <option value="multiple">Multiple Destinations</option>
+                            <option value="custom">Custom / Not Sure</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attractions">Preferred Attractions / Experiences</label>
+                        <textarea id="attractions" name="attractions" placeholder="e.g., Safari, Table Mountain, Robben Island, cultural experiences..."></textarea>
+                    </div>
+                    
+                    <!-- Services -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 40px;">Services Required</h3>
+                    
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="service_accommodation"> Accommodation</label>
+                        <label><input type="checkbox" name="service_transfers"> Transfers & Transport</label>
+                        <label><input type="checkbox" name="service_airport"> Airport Shuttle</label>
+                        <label><input type="checkbox" name="service_tours"> Guided Tours</label>
+                        <label><input type="checkbox" name="service_safari"> Safari Experiences</label>
+                        <label><input type="checkbox" name="service_flights"> Flight Booking</label>
+                    </div>
+                    
+                    <!-- Additional Information -->
+                    <h3 style="color: var(--primary-navy); margin-bottom: 20px; margin-top: 40px;">Additional Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range (per person, approximate)</label>
+                        <select id="budget" name="budget">
+                            <option value="">-- Select Budget Range --</option>
+                            <option value="budget">Budget (under $1,000/day)</option>
+                            <option value="mid">Mid-Range ($1,000-2,000/day)</option>
+                            <option value="luxury">Luxury ($2,000-4,000/day)</option>
+                            <option value="ultra">Ultra-Luxury (over $4,000/day)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional">Additional Requirements or Special Requests</label>
+                        <textarea id="additional" name="additional" placeholder="Tell us anything else we should know..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 30px;">Request My Tailored Tour</button>
+                </form>
+                
+                <div style="background-color: #2D7D3F; color: white; padding: 30px; border-radius: 8px; margin-top: 40px; text-align: center;">
+                    <h3>After You Submit</h3>
+                    <p>Thank you for contacting BT New Adventure Tours. We have received your enquiry and will review your requirements. We will be in touch shortly via email or phone to discuss your tour options and provide you with a custom quote.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section-alt">
+            <div class="container" style="max-width: 800px; text-align: center;">
+                <h2>Prefer to Contact Us Directly?</h2>
+                <p style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-lg);">
+                    Call us or send an email and we'll be happy to discuss your South African travel plans.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div>
+                        <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Call Us</h3>
+                        <p style="font-size: 1.2em;"><a href="tel:+27604842816" style="color: var(--primary-gold); font-weight: bold;">060 484 2816</a></p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary-navy); margin-bottom: 10px;">Email Us</h3>
+                        <p style="font-size: 1.2em;"><a href="mailto:Brenda@btnatours.co.za" style="color: var(--primary-gold); font-weight: bold;">Brenda@btnatours.co.za</a></p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary-navy); margin-bottom: 10px;">WhatsApp</h3>
+                        <p style="font-size: 1.2em;"><a href="https://wa.me/27604842816" style="color: var(--primary-gold); font-weight: bold;" target="_blank">Chat Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>BT NEW ADVENTURE TOURS</h3>
+                <p>Discover What South Africa Has To Offer As A Tourist Destination...</p>
+                <p><strong>We Tailor Your Tours...</strong></p>
+                <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.2); margin: 15px 0;">
+                <p><strong>Telephone:</strong> <a href="tel:+27604842816" style="color: var(--primary-gold);">060 484 2816</a></p>
+                <p><strong>Email:</strong> <a href="mailto:Brenda@btnatours.co.za" style="color: var(--primary-gold);">Brenda@btnatours.co.za</a></p>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Get Started</h3>
+                    <ul>
+                        <li><a href="request-quote.html">Request a Quote</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tours.html">View Tours</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; <span id="year"></span> BT New Adventure Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/27604842816?text=Hi%20BT%20New%20Adventure%20Tours%2C%20I%20would%20like%20to%20request%20a%20tailored%20tour%20quote." 
+       class="whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+    
+    <script src="config/business-config.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
